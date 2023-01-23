@@ -1,0 +1,73 @@
+<div id="d1">
+<div class="row" style="height: 100px"></div>
+
+<div class="container d-flex mt-5">
+	<div class="card">
+		<div class="d-flex justify-content-center pt-5"><h3 id="h">To do</h3>
+		</div>
+		<div class="input-container d-flex justify-content-center pt-5">
+
+            <!-- input -->
+          <input type="text" placeholder="Enter your task here" name="task" [(ngModel)]="addTasklValue">&nbsp; <div class="button" (click)="addTask()" required>
+            <button id="btn1"><mat-icon>add</mat-icon></button>
+
+         </div> </div>
+
+       
+
+	</div> 
+
+        <div class="card" id="dcontainer">
+            <div class="d-flex justify-content-center pt-5" ><h3 id="h">Tasks</h3>
+            </div>
+
+            <div class="d-flex  pt-5 scrl" >
+               <div class="col">
+                <div id="align" *ngFor="let task of taskArr" >
+                    <ul>
+                        <li id="task">
+                            {{task.task_name}}
+                            <button id="btn" type="button" data-toggle="modal" data-target="#exampleModal"  (click)="call(task)"><mat-icon>edit</mat-icon></button>
+                            <button id="btn" (click)="deleteTask(task)"><mat-icon>delete</mat-icon></button>
+                        </li><pre style="background-color: aliceblue;"></pre>
+                    </ul>
+                    
+                    
+</div>
+
+</div>   
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit Task</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <input type="text" placeholder="Enter your task here" name="task" [(ngModel)]="editTasklValue">&nbsp; <div class="button" (click)="editTask()">
+                <button id="btn1"><mat-icon>add</mat-icon></button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	
+</div>
+    </div>
+  
+ 
+
+
+
+
+
+
+<!-- modal -->
+

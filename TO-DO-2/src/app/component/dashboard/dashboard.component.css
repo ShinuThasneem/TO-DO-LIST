@@ -1,0 +1,160 @@
+body{
+	background-color: #eee;
+}
+.card{
+    
+    margin-left: 140px;
+	background-color: #fff;
+	width: 340px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 500px;
+}
+#h{
+    color: #3c3b3d;
+    font-family: 'Abyssinica SIL';
+font-size: 20px;
+}
+/* input */
+
+.input-container input[type="text"] {
+    font-family: 'Abyssinica SIL';
+
+    height: 50px;
+    width: 250px;
+    appearance: none;
+    /* box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(17, 16, 16, 0.12); */
+    border-radius: 5px;
+    border: 8px solid #ececec;
+    background-color: #ececec;
+    cursor: pointer;
+    outline: none;
+    padding: 0px 15px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s
+}
+
+.input-container input[type="text"]:after {
+    font-family: FontAwesome;
+    content: '\f011';
+    position: absolute;
+    color: #7a7a7a;
+    font-size: 30px;
+    color: rgb(80, 78, 78)
+}
+
+.input-container input[type="text"]:focus {
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(70, 70, 70, 0.12), inset -10px -10px 15px rgba(255, 255, 255, 0.5), inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+    color: rgb(79, 76, 76)
+}
+
+.input-container input[type="text"]:focus:after {
+    color: #2a2929
+}
+
+
+/* button */
+
+
+
+ .button{
+    height:50px;
+    width:50px;
+    background-color:#928fbf;
+    color:rgb(42, 28, 99);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:3px;
+    font-size:22px;
+    cursor:pointer;
+    position:relative;
+    transition:all 0.5s;
+    /* background: transparent; */
+    /* box-shadow: #4a4a4b 2px 2px  5px; */
+}
+
+
+/* 2nd card */
+#d1{
+    height: 800px;
+    width: 100;
+    /* background-color: #3F51B5; */
+    background: linear-gradient(135deg, #38174b, #7ba2c2);
+
+}
+
+#dcontainer{
+    margin-left: 190px;
+    background-color: #fff;
+	width: 340px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 500px;
+}
+#head{
+    font-family: 'Abyssinica SIL';
+
+    /* background-color: #3F51B5; */
+	color: rgb(231, 230, 240);
+	width: 80px;
+    padding-left: 3px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color:#5E5B98;
+    transition: 0.7s;
+    color: white;
+
+}
+#btn1:hover{
+    color: #fff;
+}
+#task{
+    font-family: 'Abyssinica SIL';
+
+    background-color:#928fbf;
+    height: 50px;
+    width: 300px;
+    border-radius: 3px;
+    border:3px ;
+   margin:  auto;
+   width: 90%;
+   padding-top: 5%;
+   padding-left: 5%;
+   box-shadow: #7a7a7a 5px 5px 5px ;
+  
+   
+    /* margin-left: 19px; */
+
+}
+#btn{
+    /* position: relative; */
+    float: right;
+    /* background-color: #7ba2c2; */
+    border: 2px;
+    border-radius: 2px;
+    background: transparent;
+    
+}
+
+
+#btn1{
+    background: transparent;
+    border: none;
+}
+
+/* modal */
+
+
+ul{
+    list-style: none;
+    }
+#align{
+    margin-left: -30px;
+}
+
